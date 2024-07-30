@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
+    <div class="bg-color">
+        <div class="main">
+            <div class="text-wrapper">
+                <div class="stick"></div>
+                <h1>
+                    Responsive <br> Registration <br> Form
+                </h1>
+            </div>
+            <div class="form-wraper">
+                <form action="" class="form">
+                    <h1>Registration form</h1>
+                    <div class="name">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter full here"
+                            aria-placeholder="Enter your full here" required aria-required="this is required">
+                    </div>
+
+                    <div class="mail">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter email address"
+                            aria-placeholder="Enter email address" required aria-required="this is required">
+                    </div>
+
+                    <div class="contact">
+                        <div class="mobile">
+                            <label for="contact">Mobile Number</label>
+                            <input type="text" name="mobileNumber" id="contact" placeholder="Enter mobile number"
+                                aria-placeholder="Enter mobile number" required aria-required="this is required">
+                        </div>
+
+                        <div class="birth">
+                            <label for="birthday">Birth Date</label> <br>
+                            <input type="date" name="birthday" id="birthday" placeholder="mm-dd-year"
+                                aria-placeholder="mm-dd-year" required aria-required="this is required">
+                        </div>
+                    </div>
+
+                    <fieldset class="gender-wrap">
+                        <legend>Gender</legend>
+                        <div class="gender">
+                            <label for="male">
+                                <input required aria-required="this is required" type="radio" name="gender" id="male"
+                                    value="male">
+                                Male
+                            </label>
+                            <label for="female">
+                                <input type="radio" name="gender" id="female" value="female">
+                                Female
+                            </label>
+                            <label for="PNTS">
+                                <input type="radio" name="gender" id="PNTS" value="prefer not to say">
+                                Prefer not to say
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset cla>
+                        <legend>Address:</legend>
+                        <input type="text" aria-label="enter address" aria-placeholder="email address" name="address"
+                            placeholder="Enter address" required aria-required="this is required"> <br>
+                        <select required aria-required="this is required" name="country" id="country">
+                            <option value="" aria-label="select country" aria-placeholder="country" selected disabled>
+                                Country</option>
+                            <option value="nigeria"> Nigeria</option>
+                            <option value="ghana"> Ghana</option>
+                            <option value="togo"> Togo</option>
+                            <option value="rwanda"> Rwanda</option>
+                        </select>
+                        <input type="text" name="" id="" placeholder="Enter postal code" aria-label="enter postal code"
+                            aria-placeholder="enter postal code" required aria-required="this is required">
+                    </fieldset>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
