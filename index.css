@@ -16,7 +16,7 @@
     width: 700px;
     display: flex;
     align-items: center;
-    /* gap: 3rem; */
+    gap: 3rem;
     justify-content: space-between;
     /* border: 1px solid black; */
 
@@ -40,13 +40,15 @@
     font-weight: bold;
 }
 .form {
-    width: 350px;
+    width: 500px;
+    height: auto;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
+    box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
 }
 .form h1{
     text-align: center;
@@ -61,7 +63,7 @@
     justify-content: space-between;
 }
 .contact input{
-    width: 150px;
+    width: 200px;
     margin-top: 6px;
 }
 fieldset {
@@ -70,7 +72,7 @@ fieldset {
 
 .gender{
     margin-top: 5px;
-    width: 300px;
+    /* width: 300px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,4 +86,39 @@ input[type=submit]{
     color: white;
     background-color: rgb(111, 97, 206);
     border-radius: 5px;
+    outline: none;
+    box-shadow: 4px 3px 5px rgb(179, 151, 151);
+}
+.location select{
+    width: 200px;
+    border: solid 1.5px rgb(225, 221, 221);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right:  50px;
+}
+.location input{
+    width: 200px;
+}
+@media screen  and (max-width: 500px){
+    .text-wrapper{
+        display: none;
+    }
+    .main{
+        /* width: 100%; */
+        justify-content: center;
+    }
+    .form{
+        width: 350px;
+    }
+    .contact input{
+        width: 150px;
+    }
+    .location select{
+        width: 150px;
+        margin-right: 10px;
+    }
+    .location input{
+        width: 150px;
+    }
 }
